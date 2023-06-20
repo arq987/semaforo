@@ -5,7 +5,7 @@ let intervalo = null;
 function semaforoAutomatico() {
     let semaforoImagen = document.getElementById('semaforoImagen');
     let colorSemaforo = coloresSemaforo[color];
-    semaforoImagen.src = "./img/" + colorSemaforo + ".png";
+    semaforoImagen.src = "./img/" + colorSemaforo.toUpperCase() + ".png";
 
     if (colorSemaforo === 'ROJO') {
         color = 2;
